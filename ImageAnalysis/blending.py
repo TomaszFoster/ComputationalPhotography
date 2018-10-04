@@ -32,33 +32,4 @@ def main():
     cv.imwrite('flubba.laplacian1.jpg', img1_laplacian)
     cv.imwrite('flubba.laplacian2.jpg', img2_laplacian)
 
-    # figure = plt.figure(figsize=(10, 10))
-
-    # # threshold
-    # threshold = 25
-
-    # # regular blur
-    # blur1 = cv.blur(img_color, (threshold, threshold))
-
-    # # bilateral filter
-    # # bf_threshold = 300
-    # # blur1 = cv.bilateralFilter( img_color, 9, bf_threshold, bf_threshold)
-
-    # # gaussian blur
-    # blur2 = cv.GaussianBlur(img_color, (threshold, threshold), 0)
-
-    # # median blur
-    # blur3 = cv.medianBlur( img_color, threshold)
-
-    # titles = ['Original Image', 'Blur',
-    #           'Gaussian Blur (v = %d)' % threshold, 'Median Blur (v = %d)' % threshold,]
-    # images = [img1, img2, blur1, blur2, blur3]
-    # for i in xrange(4):
-    #     plt.subplot(2, 2, i+1),plt.imshow( cv.cvtColor(images[i], cv.COLOR_BGR2RGB ) )
-    #     plt.title(titles[i])
-    #     plt.xticks([]),plt.yticks([])
-    # # plt.show()
-
-    # figure.savefig('flubba.g0.jpg')
-
 main()

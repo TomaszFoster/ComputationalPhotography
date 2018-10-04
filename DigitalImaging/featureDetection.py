@@ -51,6 +51,8 @@ def main():
     # plt.imshow(img3, 'gray'),plt.show()
     cv.imwrite('flubba.matches.jpg', img3)
     
+    # feature detection using FLANN algorithm
+
     # FLANN_INDEX_KDTREE = 1
     # index_params = dict(algorithm = FLANN_INDEX_KDTREE, trees = 5)
     # search_params = dict(checks = 50)
